@@ -1,0 +1,13 @@
+package sooper;
+
+public interface IPedido {
+
+	String getReferencia();
+	
+	Set<Iproducto> getProducto();
+	Set<IContenedor>getContenedores();
+	
+	void addContenedor(IContenedor contenedor);
+	IContenedor addProducto(IProducto producto);
+	
+}

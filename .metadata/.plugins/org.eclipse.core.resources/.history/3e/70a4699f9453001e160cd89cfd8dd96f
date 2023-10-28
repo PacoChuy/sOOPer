@@ -1,0 +1,22 @@
+package sooper.contenedores;
+
+public class Bolsa  extends Contenedor {
+
+	public Bolsa(String referencia, int alto) {
+		super(referencia, alto);
+		// TODO Auto-generated constructor stub
+	}
+	
+	@Override
+	public String getTipo() {
+		return "bolsa";
+	}
+
+	@Override
+	public int getSuperficie() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+	
+
+}

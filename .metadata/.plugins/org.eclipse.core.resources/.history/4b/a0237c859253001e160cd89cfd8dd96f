@@ -1,0 +1,16 @@
+package sooper.contenedores;
+
+public class Caja extends Contenedor {
+
+	@Override
+	public int getSuperficie() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public String getTipo() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+}
