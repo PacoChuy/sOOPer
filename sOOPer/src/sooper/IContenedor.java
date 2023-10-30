@@ -2,6 +2,8 @@ package sooper;
 
 import java.util.Set;
 
+import sooper.enums.TipoContenedor;
+
 public interface IContenedor {
 	String getReferencia();
 	
@@ -14,7 +16,7 @@ public interface IContenedor {
 	int getResistencia();
 	
 	Set<IProducto>getProductos();
-	String getTipo();
+	TipoContenedor getTipo();
 	boolean meter(IProducto producto);
 	boolean resiste(IProducto producto);
 	

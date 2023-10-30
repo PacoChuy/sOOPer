@@ -1,5 +1,7 @@
 package sooper.contenedores;
 
+import sooper.enums.TipoContenedor;
+
 public class Caja extends Contenedor {
 	
 	
@@ -22,8 +24,8 @@ public class Caja extends Contenedor {
 	}
 
 	@Override
-	public String getTipo() {
+	public TipoContenedor getTipo() {
 		// TODO Auto-generated method stub
-		return "caja";
+		return TipoContenedor.CAJA;
 	}
 }

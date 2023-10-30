@@ -46,11 +46,7 @@ public abstract class Contenedor implements IContenedor {
 		return null;
 	}
 
-	@Override
-	public String getTipo() {
-		// TODO Auto-generated method stub
-		return null;
-	}
+
 
 	@Override
 	public boolean meter(IProducto producto) {
