@@ -39,5 +39,18 @@ public class Pedido implements IPedido {
 		// TODO Auto-generated method stub
 		return null;
 	}
+	
+	@Override
+	public String toString() {
+		StringBuilder sb= new StringBuilder();
+		sb.append("Pedido: "+ referencia + "\n");
+		
+		for(IContenedor contenedor : contenedores) {
+			sb.append("\t"+contenedor + "\n");
+		}
+		
+		return sb.toString();
+		
+	}
 
 }
