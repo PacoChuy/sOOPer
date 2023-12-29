@@ -59,8 +59,25 @@ public abstract class Contenedor implements IContenedor {
 
 	@Override
 	public boolean resiste(IProducto producto) {
-		// TODO Auto-generated method stub
-		return false;
+	boolean resistenciaOk = resiste(producto);
+	boolean volumenOk= producto.tengoEspacio(this);
+	boolean compatibilidadOk= true;
+	
+	for (IProducto p: productos) {
+		boolean compatibleOK = producto.esCompatible(p);
+		
+		compatibilidadOk &= compatibleOK;
+		
+	}
+	
+	boolean acepta= resistenciaOk && volumenOk && compatibilidadOk;
+	
+	if(acepta)
+	{
+		productos.add(producto);
+		producto.meter(this);
+	}
+	return acepta;
 	}
 
 	@Override
