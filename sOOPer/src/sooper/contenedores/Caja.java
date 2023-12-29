@@ -1,5 +1,6 @@
 package sooper.contenedores;
 
+import sooper.IProducto;
 import sooper.enums.TipoContenedor;
 
 public class Caja extends Contenedor {
@@ -28,4 +29,12 @@ public class Caja extends Contenedor {
 		// TODO Auto-generated method stub
 		return TipoContenedor.CAJA;
 	}
+	
+	@Override
+	public boolean resiste(IProducto producto) {
+		// TODO Auto-generated method stub
+		return true;
+	}
+	
+	
 }
