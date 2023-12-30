@@ -11,7 +11,7 @@ public class Caja extends Contenedor {
 	
 	public Caja(String referencia, int alto ,int ancho, int largo) 
 	{
-		super(referencia,alto);
+		super(referencia,alto,0);
 		this.ancho = ancho;
 		this.largo = largo;
 		
@@ -20,19 +20,16 @@ public class Caja extends Contenedor {
 
 	@Override
 	public int getSuperficie() {
-		// TODO Auto-generated method stub
 		return ancho * largo;
 	}
 
 	@Override
 	public TipoContenedor getTipo() {
-		// TODO Auto-generated method stub
 		return TipoContenedor.CAJA;
 	}
 	
 	@Override
 	public boolean resiste(IProducto producto) {
-		// TODO Auto-generated method stub
 		return true;
 	}
 	

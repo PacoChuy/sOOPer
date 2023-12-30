@@ -13,11 +13,11 @@ public abstract class Contenedor implements IContenedor {
 	private Set <IProducto> productos;
 	private int resistencia;
 
-	public Contenedor(String referencia, int alto) {
+	public Contenedor(String referencia, int alto, int resistencia) {
 		this.referencia=referencia;
 		this.alto=alto;
+		this.resistencia = resistencia;
 		productos = new HashSet<IProducto>();
-		// TODO Auto-generated constructor stub
 	}
 
 	@Override
@@ -48,14 +48,12 @@ public abstract class Contenedor implements IContenedor {
 
 	@Override
 	public int getResistencia() {
-		// TODO Auto-generated method stub
-		return 0;
+		return resistencia;
 	}
 
 	@Override
 	public Set<IProducto> getProductos() {
-		// TODO Auto-generated method stub
-		return null;
+		return productos;
 	}
 
 
